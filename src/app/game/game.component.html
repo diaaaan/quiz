@@ -1,0 +1,44 @@
+<h1 *ngIf = "user"> Hello, {{user.name}}</h1>
+
+<table class="myTable">
+    <td> 
+        <tr id="1">
+            <button id = "1"  (click) = "usersClick(id)" value="1"></button>        </tr>
+        
+        <tr id="4">
+                <button (click) = "usersClick()"></button>
+        </tr>
+            
+        <tr id="7">
+                <button (click) = "usersClick()"></button>
+        </tr>
+    </td>
+    <td> 
+        <tr id="2">
+                <button (click) = "usersClick()"></button>        </tr>
+            
+        <tr id="5">
+                    <button (click) = "usersClick()"></button>
+        </tr>
+                
+        <tr id="8">
+                    <button (click) = "usersClick()"></button>
+        </tr>
+    </td>
+        <td> 
+            <tr id="3">
+                    <button (click) = "usersClick()"></button>            </tr>
+                
+            <tr id="6">
+                        <button (click) = "usersClick()"></button>
+            </tr>
+                    
+            <tr id="9">
+                        <button (click) = "usersClick()"></button>
+            </tr>
+        </td>
+</table>
+
+
+
+<button routerLink="/login">Game</button>

@@ -1,0 +1,16 @@
+<h2>Login</h2>
+<input type="text" 
+[(ngModel)] = "userName"/>
+
+<button (click) = "addUser()">Start a game</button>
+
+
+<h2>Users</h2>
+    <ul>
+        <li *ngFor="let user of users">
+            <span>{{user.id}}</span>
+            <span>{{user.name}}</span> 
+        </li>
+    </ul>
+
+<button routerLink="/game">Game</button>
